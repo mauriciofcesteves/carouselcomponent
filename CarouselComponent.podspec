@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CarouselComponent'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = "Carousel UI Component"
   s.description      = <<-DESC
   A clean UI carousel component written in Swift.
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'CarouselComponent/Classes/**/*'
+  s.source_files = 'CarouselComponent/Classes/**/*.{xib,swift}'
 end

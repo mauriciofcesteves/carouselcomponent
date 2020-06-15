@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CarouselView: UIView {
+open class CarouselView: UIView {
     
     public static var pageIndicatorTintColor = UIColor(red: 10/255, green: 73/255, blue: 144/255, alpha: 0.3)
     public static var currentPageIndicatorTintColor = UIColor(red: 10/255, green: 73/255, blue: 144/255, alpha: 1)
@@ -19,13 +19,13 @@ class CarouselView: UIView {
     
     private var images: [UIImage]?
     
-    init(frame: CGRect, images: [UIImage]) {
+    public init(frame: CGRect, images: [UIImage]) {
         self.images = images
         super.init(frame: frame)
         commonInit()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
@@ -46,7 +46,7 @@ class CarouselView: UIView {
 }
 
 extension CarouselView: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: self.frame.size.width, height: self.frame.size.height)
     }
     
@@ -58,11 +58,11 @@ extension CarouselView: UICollectionViewDelegateFlowLayout {
 
 extension CarouselView: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return images?.count ?? 0
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let images = images else {
             return UICollectionViewCell()
