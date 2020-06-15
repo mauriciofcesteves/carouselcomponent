@@ -22,7 +22,7 @@ pod 'CarouselComponent'
 
 ## Author
 
-mauriciofcesteves, mesteves@kineticcafe.com
+Mauricio Esteves, mauricio.fc.esteves@gmail.com
 
 ## License
 
