@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CarouselComponent'
-  s.version          = '0.4.0'
+  s.version          = '0.5.0'
   s.summary          = "Carousel UI Component"
   s.description      = <<-DESC
   A clean UI carousel component written in Swift.

@@ -31,13 +31,16 @@ open class CarouselView: UIView {
     }
     
     private func commonInit() {
-        Bundle.main.loadNibNamed("CarouselView", owner: self, options: nil)
+        let bundle = Bundle(for: self.classForCoder)
+        let nib = UINib(nibName: "CarouselView", bundle: bundle)
+        nib.instantiate(withOwner: self, options: nil)
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         carouselPageControl.numberOfPages = images?.count ?? 0
         carouselPageControl.size(forNumberOfPages: images?.count ?? 0)
-        carouselCollectionView.register(UINib(nibName: "CarouselCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CarouselCollectionViewCell")
+        
+        carouselCollectionView.register(UINib(nibName: "CarouselCollectionViewCell", bundle: bundle), forCellWithReuseIdentifier: "CarouselCollectionViewCell")
         carouselPageControl.currentPage = 0
         carouselPageControl.hidesForSinglePage = true
         carouselPageControl.pageIndicatorTintColor = CarouselView.pageIndicatorTintColor
