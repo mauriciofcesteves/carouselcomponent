@@ -1,0 +1,16 @@
+PODS:
+  - CarouselComponent (0.1.0)
+
+DEPENDENCIES:
+  - CarouselComponent (from `../`)
+
+EXTERNAL SOURCES:
+  CarouselComponent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CarouselComponent: 9211fa74583ea0d91380406abae6f3359b0f0f3e
+
+PODFILE CHECKSUM: e53450f13a38f52a0777daadcdaf04ff5bb51949
+
+COCOAPODS: 1.8.4
