@@ -5,11 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/CarouselComponent.svg?style=flat)](https://cocoapods.org/pods/CarouselComponent)
 [![Platform](https://img.shields.io/cocoapods/p/CarouselComponent.svg?style=flat)](https://cocoapods.org/pods/CarouselComponent)
 
+![Carousel](https://i.imgur.com/o41gcxn.png)
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+To run the example project, please access: [Carousel Sample](https://github.com/mauriciofcesteves/carouselexample).
 
 ## Installation
 
